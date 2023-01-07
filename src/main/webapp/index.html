@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <script src="./tic_tac_toe.js"></script>
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+<main class="background">
+    <section class="title">
+        <h1>Tic Tac Toe</h1>
+    </section>
+    <section class="display" id="connect">
+        Enter a name and Connect with Game Server
+        <br/>
+        <input type="text" id="username" placeholder="Username"/>
+        <br/>
+        <button class="button" id="connect-button" type="button" onclick="connect();" >Connect</button>
+    </section>
+
+    <section class="display" id="player-name"></section>
+    <section class="display hide fade-in" id="player-message"></section>
+    <section class="display hide" id="start-join">
+        <button class="button" id="play-bot-button" type="button" onclick="playWithABot();" >Play with a Bot</button>
+        <button class="button" id="start-button" type="button" onclick="startGame();" >Start a Game</button>
+        <button class="button" id="join-button" type="button" onclick="join();" >Join a Game</button>
+    </section>
+    <section class="display hide" id="join-game">
+        <input type="text" id="game-id" placeholder="GameId"/> <br/>
+        <button class="button" id="join-game-button" type="button" onclick="joinGame();" >Join</button>
+    </section>
+    <section class="display hide fade-in" id="game-message"></section>
+    <section class="container">
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+    </section>
+    <section class="controls">
+        <button id="exit" class="button" onclick="exitGame();">Exit</button>
+    </section>
+</main>
+</body>
+</html>
